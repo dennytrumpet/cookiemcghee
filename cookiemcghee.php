@@ -8,10 +8,6 @@ Version: 1.02
 Author: Dennis McGhee
 Author URI: http://the3rdplace.co
 
-	Copyright 2017  DENNIS MCGHEE 
-	
-	(email : dennis.mcghee@voxmd.com)
-
 */
 /* changed to wp-options and transients */
 function cookiemcghee_install() {
