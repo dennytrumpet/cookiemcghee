@@ -15,7 +15,7 @@ add_option('cookiemcghee_db_version', '1.02');
 }
 
 function cookiemcghee_func($atts) {
-$html = '<div id="cookiebar"> We use <a href="/privacy-policy/">cookies</a> to offer you a better browsing experience.&nbsp;&nbsp;&nbsp;<a href="#" id="hidebar">X</a></div>';
+$html = '<div id="cookiebar"> We use <a href="/privacy-policy/">cookies</a> to offer you a better browsing experience.&nbsp;&nbsp;&nbsp;<a href="#" id="hidebar">&times;</a></div>';
     return $html;
 }
 // register jquery and style on initialization
@@ -32,7 +32,7 @@ add_action('wp_enqueue_scripts', 'enqueue_style');
 function enqueue_style(){
    wp_enqueue_script('cookie_library');
    wp_enqueue_script('cookie_script');
-   wp_enqueue_style( 'cookie_style' );
+   wp_enqueue_style('cookie_style' );
 }
 
 function cookiemcghee_uninstall() {
